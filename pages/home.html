@@ -1,0 +1,552 @@
+<div class="page page-home">
+
+	<!-- Page Content -->
+	<div class="page-content content-area pt-40 bottom-sp60">
+
+		<!-- Search backdrop -->
+		<div class="searchbar-backdrop"></div>
+
+		<div class="container">
+
+			<!-- Search -->
+			<form data-search-container=".search-list" data-search-in=".item-title"
+				class="searchbar searchbar-init search-box list-search-bx">
+				<div class="searchbar-inner">
+					<div class="searchbar-input-wrap">
+						<input type="search" placeholder="Pesquise a bebida desejado..." />
+						<i class="searchbar-icon">
+							<svg width="25" height="37" viewBox="0 0 25 37" fill="none"
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect x="3.88892" width="16.6667" height="37" fill="url(#pattern0_35_30)" />
+								<rect y="2" width="25" height="35" fill="url(#pattern1_35_30)" />
+								<defs>
+									<pattern id="pattern0_35_30" patternContentUnits="objectBoundingBox" width="1"
+										height="1">
+										<use xlink:href="#image0_35_30"
+											transform="matrix(0.00433594 0 0 0.00195312 -0.61 0)" />
+									</pattern>
+									<pattern id="pattern1_35_30" patternContentUnits="objectBoundingBox" width="1"
+										height="1">
+										<use xlink:href="#image1_35_30"
+											transform="matrix(0.00273437 0 0 0.00195312 -0.2 0)" />
+									</pattern>
+									<image id="image0_35_30" width="512" height="512"
+										xlink:href="data:image/png;base64,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" />
+									<image id="image1_35_30" width="512" height="512"
+										xlink:href="data:image/png;base64,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" />
+								</defs>
+							</svg>
+						</i>
+					</div>
+				</div>
+			</form>
+			<div class="list simple-list searchbar-not-found">
+				<ul>
+					<li>Nothing found</li>
+				</ul>
+			</div>
+
+			<div class="item-info" style="margin:1rem 0;">
+				<div class="container">
+					<swiper-container class="demo-swiper swiper-init main-swiper tags-swiper" space-between="15"
+						slides-per-view="auto">
+						<swiper-slide>
+							<a href="#" class="badge-md">Minhas compras</a>
+						</swiper-slide>
+						<swiper-slide>
+							<a href="#" class="badge-md">Comprar novamente</a>
+						</swiper-slide>
+						<swiper-slide>
+							<a href="#" class="badge-md">Lista de favoritos</a>
+						</swiper-slide>
+						<swiper-slide>
+							<a href="#" class="badge-md">Notas</a>
+						</swiper-slide>
+						<swiper-slide>
+							<a href="#" class="badge-md">Mudar endereços</a>
+						</swiper-slide>
+						<swiper-slide>
+							<a href="#" class="badge-md">Avaliados</a>
+						</swiper-slide>
+					</swiper-container>
+				</div>
+			</div>
+
+			<!-- Banners  -->
+			<swiper-container pagination class="demo-swiper main-swiper mb-30 swiper-pagination1 overlay-swiper1"
+				space-between="15" slides-per-view="auto">
+				<swiper-slide>
+					<div class="card-overlay style-1 bg-overlay2"
+						style="background-image: url(img/products/single/pic1.png);">
+
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+					<div class="card-overlay style-1 bg-overlay1"
+						style="background-image: url(img/products/single/pic2.png);">
+
+					</div>
+				</swiper-slide>
+			</swiper-container>
+
+
+
+			<!-- Ofertas -->
+			<div class="title-bar">
+				<h4 class="dz-title">Ofertas</h4>
+				<a href="/ofers/" class="button text-capitalize">Mais</a>
+			</div>
+			<swiper-container class="main-swiper mb-30 items-swiper" space-between="15" slides-per-view="auto">
+				<swiper-slide>
+					<div class="item-bx style-3">
+						<div class="dz-media">
+							<a href="/products/">
+								<img src="img/products/single/pic1.png" alt="">
+							</a>
+						</div>
+						<div class="dz-info">
+							<h6 class="item-title">
+								<a class="button button-fill sheet-open" data-sheet=".demo-sheet-swipe-to-step">Ver
+									detalhes</a>
+							</h6>
+						</div>
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+					<div class="item-bx style-3">
+						<div class="dz-media">
+							<a href="/products/">
+								<img src="img/products/single/pic2.png" alt="">
+							</a>
+						</div>
+						<div class="dz-info">
+							<div class="dz-head">
+								<h6 class="item-title">
+									<a class="button button-fill sheet-open" data-sheet=".demo-sheet-swipe-to-step">Ver
+										detalhes</a>
+								</h6>
+							</div>
+						</div>
+					</div>
+				</swiper-slide>
+			</swiper-container>
+
+
+
+			<!-- Ofertas -->
+			<div class="list list-strong-ios list-outline-ios list-dividers-ios">
+				<ul>
+					<li>
+						<a href="/ofers/">
+							<div class="item-content">
+								<div class="item-media"><i class="icon"> 
+									<img src="img/svg/etiqueta.svg" alt="">
+								</i></div>
+								<div class="item-inner">
+									<div class="item-title">Ofertas</div>
+									<div class="item-after"><span class="badge color-green">127</span></div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/store/">
+							<div class="item-content">
+								<div class="item-media"><i class="icon">
+									<img src="img/svg/store.svg" alt="" class="mr-10">
+								</i></div>
+								<div class="item-inner">
+									<div class="item-title">Lojas</div>
+									<div class="item-after"><span class="badge color-blue">4</span></div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Categories -->
+			<div class="title-bar">
+				<h4 class="dz-title">Categorias</h4>
+				<a href="/categories/" class="button text-capitalize">Mais</a>
+			</div>
+			<div class="list search-list mt-0 mb-30 dz-list searchbar-found item-list">
+				<ul class="grid grid-cols-2 grid-gap categories-wraper">
+					<li>
+						<a href="/categories/">
+							<div class="categories-bx"
+								style="background-image: url(img/categories/vinhos.png);background-size: cover;">
+								<h4 class="text-white" style="filter: drop-shadow(2px 4px 6px black);">Vinhos</h4>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/categories/">
+							<div class="categories-bx"
+								style="background-image: url(img/categories/destilados.png);background-size: cover;">
+								<h4 class="text-white" style="filter: drop-shadow(2px 4px 6px black);">Destilados</h4>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/categories/">
+							<div class="categories-bx"
+								style="background-image: url(img/categories/cervejas.png);background-size: cover;">
+								<h4 class="text-white" style="filter: drop-shadow(2px 4px 6px black);">Cervejas</h4>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/categories/">
+							<div class="categories-bx"
+								style="background-image: url(img/categories/acessorios.png);background-size: cover;">
+								<h4 class="text-white" style="filter: drop-shadow(2px 4px 6px black);">Acessórios</h4>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- WISHLIST -->
+			<div class="card py-20 px-20 my-40">
+				<h5 class="item-title mt-0">
+					<a href="/wishlist/" class="icon-bx">
+						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8718 24.1951C12.4595 24.7138 13.2163 25 14 25C14.7837 25 15.5405 24.7138 16.1282 24.1951C18.701 21.931 24.7159 15.9531 24.9906 9.44545C25.0796 7.83754 24.5309 6.25945 23.4636 5.05403C22.3962 3.84862 20.8966 3.11328 19.2905 3.00777C18.2512 2.95813 17.217 3.17996 16.2894 3.65143C15.3618 4.12291 14.5728 4.8278 14 5.6968C13.4297 4.82531 12.6412 4.11848 11.713 3.64669C10.7848 3.17491 9.74927 2.95462 8.7095 3.00777C7.10338 3.11328 5.60375 3.84862 4.53644 5.05403C3.46912 6.25945 2.92035 7.83754 3.00936 9.44545C3.28412 15.9531 9.299 21.931 11.8718 24.1951Z"
+								fill="#B9BCD3"></path>
+						</svg>
+					</a>
+					Meus favoritos
+				</h5>
+				<div class="item-text mb-20">Você ainda não tem uma lista?</div>
+				<div class="item-time">
+					<a class="button button-fill sheet-open" data-sheet=".demo-sheet-swipe-to-step">Criar lista</a>
+				</div>
+			</div>
+
+			<!-- Featured Products -->
+			<div class="title-bar" style="margin-top: 1rem;">
+				<h4 class="dz-title">Principais Produtos</h4>
+				<a href="/products/" class="button text-capitalize">Mais</a>
+			</div>
+			<swiper-container class="main-swiper overlay-swiper1 items-swiper mb-10" space-between="20"
+				slides-per-view="auto">
+				<swiper-slide>
+					<div class="item-bx">
+						<div class="dz-media">
+							<a href="/item-details/"><img src="img/products/product1.jpg" alt=""
+									style="width:205px; height: 205px;"></a>
+						</div>
+						<div class="dz-info">
+							<div class="dz-head">
+								<h6 class="item-title"><a href="/item-details/">Cabernet Vinho </a></h6>
+							</div>
+							<div class="dz-meta">
+								<ul>
+									<li class="price">R$69.4</li>
+									<li class="qty"><strong class="text-primary">45</strong>qtd.</li>
+								</ul>
+							</div>
+							<div class="dz-footer">
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									(245 Avalições)
+								</div>
+							</div>
+						</div>
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+					<div class="item-bx">
+						<div class="dz-media">
+							<a href="/item-details/"><img src="img/products/product2.jpg"
+									style="width:205px; height: 205px;" alt=""></a>
+						</div>
+						<div class="dz-info">
+							<div class="dz-head">
+								<h6 class="item-title"><a href="/item-details/">Cabernet Vinho </a></h6>
+							</div>
+							<div class="dz-meta">
+								<ul>
+									<li class="price">R$69.4</li>
+									<li class="qty"><strong class="text-primary">45</strong>qtd.</li>
+								</ul>
+							</div>
+							<div class="dz-footer">
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									(245 Avalições)
+								</div>
+							</div>
+						</div>
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+					<div class="item-bx">
+						<div class="dz-media">
+							<a href="/item-details/"><img src="img/products/product3.jpg"
+									style="width:205px; height: 205px;" alt=""></a>
+						</div>
+						<div class="dz-info">
+							<div class="dz-head">
+								<h6 class="item-title"><a href="/item-details/">Cabernet Vinho </a></h6>
+							</div>
+							<div class="dz-meta">
+								<ul>
+									<li class="price">R$69.4</li>
+									<li class="qty"><strong class="text-primary">45</strong>qtd.</li>
+								</ul>
+							</div>
+							<div class="dz-footer">
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									(245 Avalições)
+								</div>
+							</div>
+						</div>
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+					<div class="item-bx">
+						<div class="dz-media">
+							<a href="/item-details/"><img src="img/products/product4.jpg"
+									style="width:205px; height: 205px;" alt=""></a>
+						</div>
+						<div class="dz-info">
+							<div class="dz-head">
+								<h6 class="item-title"><a href="/item-details/">Cabernet Vinho </a></h6>
+							</div>
+							<div class="dz-meta">
+								<ul>
+									<li class="price">R$69.4</li>
+									<li class="qty"><strong class="text-primary">45</strong>qtd.</li>
+								</ul>
+							</div>
+							<div class="dz-footer">
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									(245 Avalições)
+								</div>
+							</div>
+						</div>
+					</div>
+				</swiper-slide>
+			</swiper-container>
+
+
+			<!-- Drinks -->
+			<div class="title-bar" style="margin-top: 1rem;">
+				<h4 class="dz-title">Receitas de coquetéis</h4>
+				<a href="/drinks/" class="button text-capitalize">Mais</a>
+			</div>
+
+			<div class="grid medium-grid-cols-2 grid-gap container pa-0 mb-20">
+				<div>
+					<div class="cart-item">
+						<div class="item-head">
+							<p class="item-num">11% alc.</p>
+						</div>
+						<div class="item-body">
+							<div class="dz-media">
+								<img src="img/drinks/margarita.png" alt="">
+							</div>
+							<div class="dz-info">
+								<div class="dz-head">
+									<h4 class="item-title"><a href="/drink-details/">Margarita</a>
+									</h4>
+								</div>
+								<div class="dz-foot">
+									<div class="badge-md">Fácil</div>
+									<h4 class="price display-flex align-items-center"><i class="material-icons">query_builder</i>10Min</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="cart-item">
+						<div class="item-head">
+							<p class="item-num">14% alc.</p>
+						</div>
+						<div class="item-body">
+							<div class="dz-media">
+								<img src="img/drinks/jackandcoke.png" alt="">
+							</div>
+							<div class="dz-info">
+								<div class="dz-head">
+									<h4 class="item-title"><a href="/drink-details/">Jack & Coke</a>
+									</h4>
+								</div>
+								<div class="dz-foot">
+									<div class="badge-md">Fácil</div>
+									<h4 class="price display-flex align-items-center"><i class="material-icons">query_builder</i>10Min</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Toolbar Bottom -->
+	<div class="toolbar tabbar tabbar-labels toolbar-bottom menubar-area">
+		<div class="toolbar-inner">
+			<a href="/home/" class="tab-link active">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M9.752 2H4.648C3.18555 2 2 3.18555 2 4.648V9.752C2 11.2144 3.18555 12.4 4.648 12.4H9.752C11.2144 12.4 12.4 11.2144 12.4 9.752V4.648C12.4 3.18555 11.2144 2 9.752 2Z"
+						fill="#2B39B9" />
+					<path
+						d="M23.352 2H18.248C16.7856 2 15.6 3.18555 15.6 4.648V9.752C15.6 11.2144 16.7856 12.4 18.248 12.4H23.352C24.8145 12.4 26 11.2144 26 9.752V4.648C26 3.18555 24.8145 2 23.352 2Z"
+						fill="#2B39B9" />
+					<path
+						d="M9.752 15.6H4.648C3.18555 15.6 2 16.7856 2 18.248V23.352C2 24.8145 3.18555 26 4.648 26H9.752C11.2144 26 12.4 24.8145 12.4 23.352V18.248C12.4 16.7856 11.2144 15.6 9.752 15.6Z"
+						fill="#2B39B9" />
+					<path
+						d="M20.8 26C23.6719 26 26 23.6719 26 20.8C26 17.9281 23.6719 15.6 20.8 15.6C17.9281 15.6 15.6 17.9281 15.6 20.8C15.6 23.6719 17.9281 26 20.8 26Z"
+						fill="#2B39B9" />
+				</svg>
+				<span>Home</span>
+			</a>
+			<a href="/ofers/" class="tab-link">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M22.75 3.0625H5.25C4.55381 3.0625 3.88613 3.33906 3.39384 3.83134C2.90156 4.32363 2.625 4.99131 2.625 5.6875V22.3125C2.625 23.0087 2.90156 23.6764 3.39384 24.1687C3.88613 24.6609 4.55381 24.9375 5.25 24.9375H22.75C23.4462 24.9375 24.1139 24.6609 24.6062 24.1687C25.0984 23.6764 25.375 23.0087 25.375 22.3125V5.6875C25.375 4.99131 25.0984 4.32363 24.6062 3.83134C24.1139 3.33906 23.4462 3.0625 22.75 3.0625ZM7.06562 12.1494C6.99971 11.9892 6.98282 11.8131 7.01709 11.6433C7.05135 11.4735 7.13524 11.3177 7.25813 11.1956L9.88313 8.57063C10.0505 8.42728 10.2658 8.35237 10.486 8.36088C10.7063 8.36938 10.9152 8.46067 11.071 8.61651C11.2268 8.77234 11.3181 8.98124 11.3266 9.20145C11.3351 9.42167 11.2602 9.63699 11.1169 9.80437L9.98812 10.9375H19.6875C19.9196 10.9375 20.1421 11.0297 20.3062 11.1938C20.4703 11.3579 20.5625 11.5804 20.5625 11.8125C20.5625 12.0446 20.4703 12.2671 20.3062 12.4312C20.1421 12.5953 19.9196 12.6875 19.6875 12.6875H7.875C7.702 12.6879 7.53279 12.6369 7.38872 12.5412C7.24466 12.4454 7.13223 12.309 7.06562 12.1494ZM21.1794 17.2419L18.5544 19.8669C18.4759 19.9585 18.3794 20.0329 18.2708 20.0854C18.1623 20.1379 18.0441 20.1674 17.9235 20.1721C17.803 20.1767 17.6829 20.1564 17.5706 20.1124C17.4583 20.0684 17.3563 20.0017 17.2711 19.9164C17.1858 19.8312 17.1191 19.7292 17.0751 19.6169C17.0311 19.5046 17.0108 19.3845 17.0154 19.264C17.0201 19.1434 17.0496 19.0252 17.1021 18.9167C17.1546 18.8081 17.229 18.7116 17.3206 18.6331L18.4494 17.5H8.75C8.51794 17.5 8.29538 17.4078 8.13128 17.2437C7.96719 17.0796 7.875 16.8571 7.875 16.625C7.875 16.3929 7.96719 16.1704 8.13128 16.0063C8.29538 15.8422 8.51794 15.75 8.75 15.75H20.5625C20.7355 15.7496 20.9047 15.8006 21.0488 15.8963C21.1928 15.9921 21.3053 16.1285 21.3719 16.2881C21.4378 16.4483 21.4547 16.6244 21.4204 16.7942C21.3861 16.964 21.3023 17.1198 21.1794 17.2419Z"
+						fill="#B9BCD3" />
+				</svg>
+				<span>Ofertas</span>
+			</a>
+			<a href="/shopping-cart/" class="tab-link">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M26.9657 7.50236L25.0988 17.1356C24.9727 17.7824 24.6239 18.3655 24.1122 18.7852C23.6006 19.2049 22.9578 19.4351 22.2939 19.4364H9.23128C8.6013 19.4337 7.98986 19.2246 7.49201 18.8415C6.99416 18.4584 6.63779 17.9229 6.47831 17.3181C6.45639 17.2665 3.55384 2.89091 3.55384 2.89091H1.95275C1.70006 2.89091 1.45773 2.7913 1.27905 2.61399C1.10038 2.43668 1 2.1962 1 1.94545C1 1.6947 1.10038 1.45422 1.27905 1.27692C1.45773 1.09961 1.70006 1 1.95275 1H3.55337C3.99367 1.00101 4.42012 1.15285 4.76063 1.42985C5.10114 1.70686 5.33483 2.09204 5.42218 2.52029L5.97335 5.25455H25.0945C25.3753 5.25455 25.6525 5.31611 25.9065 5.4348C26.1604 5.5535 26.3848 5.72642 26.5636 5.94118C26.7424 6.15594 26.8711 6.40725 26.9406 6.67713C27.0102 6.94701 27.0187 7.22881 26.9657 7.50236ZM11.0039 21.3273C10.4386 21.3273 9.88595 21.4936 9.41591 21.8053C8.94587 22.1169 8.57952 22.5599 8.36319 23.0782C8.14686 23.5965 8.09025 24.1668 8.20054 24.717C8.31082 25.2672 8.58305 25.7726 8.98278 26.1692C9.38251 26.5659 9.8918 26.8361 10.4462 26.9455C11.0007 27.0549 11.5754 26.9988 12.0977 26.7841C12.6199 26.5694 13.0663 26.2059 13.3804 25.7394C13.6945 25.273 13.8621 24.7246 13.8621 24.1636C13.8614 23.4116 13.56 22.6906 13.0241 22.1589C12.4883 21.6271 11.7617 21.328 11.0039 21.3273ZM20.5314 21.3273C19.966 21.3273 19.4134 21.4936 18.9434 21.8053C18.4734 22.1169 18.107 22.5599 17.8907 23.0782C17.6743 23.5965 17.6177 24.1668 17.728 24.717C17.8383 25.2672 18.1105 25.7726 18.5103 26.1692C18.91 26.5659 19.4193 26.8361 19.9737 26.9455C20.5282 27.0549 21.1029 26.9988 21.6252 26.7841C22.1474 26.5694 22.5938 26.2059 22.9079 25.7394C23.222 25.273 23.3896 24.7246 23.3896 24.1636C23.3888 23.4116 23.0875 22.6906 22.5516 22.1589C22.0157 21.6271 21.2892 21.328 20.5314 21.3273Z"
+						fill="#B9BCD3" />
+				</svg>
+				<span>Carrinho</span>
+			</a>
+			<a href="/profile/" class="tab-link">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.652 14.5773C10.5852 14.5189 10.4309 14.3833 10.376 14.332C9.03775 13.0805 8.16102 11.1208 8.16102 8.91219C8.16102 5.05573 10.8279 2 14.0005 2C17.1731 2 19.84 5.05573 19.84 8.91219C19.84 11.1189 18.9648 13.0772 17.6301 14.3307C17.5739 14.3835 17.4166 14.5219 17.3507 14.5797L17.345 14.6755C17.3824 15.2508 17.7708 15.7492 18.3285 15.9252C22.4736 17.2297 25.4787 20.3468 25.9833 24.0412C26.0527 24.5341 25.9042 25.0326 25.576 25.4082C25.2478 25.7837 24.7723 25.9993 24.2724 25.9993C20.614 26 7.38718 26 3.72875 26C3.22849 26 2.75273 25.7843 2.42445 25.4086C2.09617 25.033 1.94756 24.5342 2.01657 24.0445C2.52238 20.3467 5.52746 17.2297 9.67193 15.9253C10.2315 15.7487 10.6204 15.2482 10.6562 14.6711L10.652 14.5773Z"
+						fill="#B9BCD3" />
+				</svg>
+				<span>Perfil</span>
+			</a>
+		</div>
+	</div>
+	<div class="sheet-modal demo-sheet-swipe-to-step" style="height:auto">
+		<div class="sheet-modal-inner">
+			<div class="swipe-handler"></div>
+			<div class="sheet-modal-swipe-step">
+				<div class="display-flex padding justify-content-space-between align-items-center">
+					<div style="font-size: 18px"><b>Oferta:</b></div>
+					<div style="font-size: 22px"><b>50%</b></div>
+				</div>
+				<div class="padding-horizontal padding-bottom">
+					<a class="button button-large button-fill">Ativar oferta</a>
+				</div>
+			</div>
+			<div class="list no-hairlines">
+				<div class="margin-top text-align-center">Detalhes sobre a oferta:</div>
+				<p class="p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+					has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+					galley of type and scrambled it to make a type specimen book. It has survived not only five
+					centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+					popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+					more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+					Ipsum.</p>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+<script>
+	export default (props, { $f7, $on }) => {
+		let sheetSwipeToStep;
+		let sheetBreakpoints;
+
+		const toggleSwipeStep = () => {
+			sheetSwipeToStep.stepToggle();
+		}
+		const createSheet = () => {
+			// Create sheet modal
+			if (!sheet) {
+				sheet = $f7.sheet.create({
+					content: '\
+			  <div class="sheet-modal">\
+				<div class="toolbar">\
+				  <div class="toolbar-inner justify-content-flex-end">\
+					<a  class="link sheet-close">Close</a>\
+				  </div>\
+				</div>\
+				<div class="sheet-modal-inner">\
+				  <div class="page-content">\
+					<div class="block">\
+					  <p>This sheet modal was created dynamically</p>\
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus, viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.</p>\
+					</div>\
+				  </div>\
+				</div>\
+			  </div>\
+			'
+				});
+			}
+			// Close inline sheet
+			if ($('.demo-sheet.modal-in').length > 0) $f7.sheet.close('.demo-sheet');
+			// Open it
+			sheet.open();
+		}
+
+		$on('pageInit', () => {
+			sheetSwipeToStep = $f7.sheet.create({
+				el: '.demo-sheet-swipe-to-step',
+				swipeToClose: true,
+				swipeToStep: true,
+				push: true,
+				backdrop: true,
+			});
+			sheetBreakpoints = $f7.sheet.create({
+				el: '.demo-sheet-breakpoints',
+				swipeToClose: true,
+				breakpoints: [0.33, 0.66],
+				backdrop: true,
+				backdropBreakpoint: 0.66,
+				push: true,
+				pushBreakpoint: 0.66,
+			});
+		});
+		$on('pageBeforeOut', () => {
+			// Close opened sheets on page out
+			$f7.sheet.close();
+		});
+		$on('pageBeforeRemove', () => {
+
+
+			// Destroy sheet modal when page removed
+			if (sheet) sheet.destroy();
+			if (sheetPush) sheetPush.destroy();
+			if (sheetSwipeToClose) sheetSwipeToClose.destroy();
+			if (sheetSwipeToStep) sheetSwipeToStep.destroy();
+			if (sheetBreakpoints) sheetBreakpoints.destroy();
+		});
+
+		return $render;
+	};
+
+</script>

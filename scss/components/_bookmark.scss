@@ -1,0 +1,37 @@
+/* Bookmark */
+.bookmark-btn{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Font Awesome 5 Free";
+	
+	input{
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+		display: none;
+		
+		&:checked ~ .checkmark:before {
+			color: var(--f7-theme-color);
+		}
+	}
+	.checkmark{
+		font-weight: 900;
+		line-height: 1;
+	
+		&:after {
+			content: "\f004";
+			position: absolute;
+			display: none;
+		}
+		&:before {
+			content: "\f004";
+			font-size: 20px;
+			color: #B9BCD3;
+		}
+	}
+}

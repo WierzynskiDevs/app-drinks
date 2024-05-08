@@ -1,0 +1,406 @@
+/* RTL Theme */
+[dir*="rtl"]{
+	.form-elements{
+		ul{
+			.item-content{
+				.item-media + .item-inner{
+					margin-right: 0;
+				}
+				.item-media {
+					left: auto;
+					right: 24px;
+				}
+				.item-media + .item-inner{
+					.item-input-wrap{
+						.form-control {
+							padding: 15px 66px 15px 25px;
+						}
+					}
+				}
+				.item-inner{
+					.input-dropdown-wrap{
+						&::before{
+							right: auto!important;
+							left: 30px!important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.main-logo.left .logo-icon {
+		margin-left: 10px;
+		margin-right: 0;
+	}
+	.show-pass {
+		right: auto;
+		left: 20px;
+	}
+	.navbar.navbar-style-1 .navbar-inner .link.panel-open{
+		padding: 0 10px 0 0!important;
+	}
+	.page-content{
+		.searchbar.searchbar-init.search-box{
+			.searchbar-input-wrap{
+				.searchbar-icon {
+					left: 15px;
+					right: auto;
+				}
+				input {
+					padding: 12px 25px 12px 50px;
+				}
+			}
+		}	
+	}
+	.dz-meta{
+		ul{
+			li {
+				margin-right: 0;
+				margin-left: 12px;
+				i,
+				svg{
+					margin-left: 10px;
+					margin-right: 0;
+				}
+				&:after {
+					right: auto;
+					left: 0;
+				}
+				&:last-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	// sidebar
+	.sidebar-left{
+		.nav-bar ul li a{
+			.icon-bx{
+				margin-left: 15px;
+				margin-right: 0;
+			}
+		}
+		&.panel-right{
+			display: block;
+		}
+	}
+	.main-profile .dz-media {
+		margin-right: 0;
+		margin-left: 15px;
+	}
+	.search-list-bar{
+		.item-content {
+			.item-inner {
+				margin-left: 0;
+				margin-right: 15px;
+			}
+			.item-footer span i {
+				margin-left: 0;
+				margin-right: 5px;
+			}
+			.online {
+				left: auto;
+				right: -8px;
+			}
+		}
+	}
+	.messages .message.message-received .message-content .message-bubble:before {
+		right: auto;
+	}
+	.messagebar{
+		.toolbar-inner{
+			.icon-only {
+				position: absolute;
+				left: 5px;
+				transform: rotateY(180deg);
+				top: 3px;
+			}
+			textarea {
+				padding: 10px 40px;
+			}
+			.emoji-icon{
+				left: auto;
+				right: 10px;
+			}
+		}
+	}
+
+	// Navbar
+	.navbar{
+		.navbar-inner{
+			.link.back{
+				transform: rotateY(180deg);
+			}
+		}
+		.right{
+			margin-left: 0;
+			margin-right: auto!important;
+		}
+	}
+
+	// Main Swiper
+	.main-swiper{
+		margin-left: 0;
+		margin-right: -20px;
+
+		swiper-slide{
+			&:first-child{
+				margin-left: 0;
+				margin-right: 20px;
+			}
+			&:last-child{
+				margin-left: 20px;
+				margin-right: 0;
+			}
+		}
+		@include respond('tab-port'){
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+	}
+
+	// Tabbar Styles
+	.tabbar{
+		&.tab-style-2{
+			margin-left: 0;
+			margin-right: -20px;
+			
+			swiper-slide{
+				&:first-child {
+					margin-left: 0;
+					margin-right: 20px;
+				}
+			}
+			
+			@include respond('tab-port') {
+				margin-left: -20px;
+				margin-right: -20px;
+			}
+		}
+	}
+
+	// Main Logo
+	.main-logo{
+		text-align: right;
+		.logo-text{
+			margin-left: 0;
+			margin-right: 16px;
+		}
+		&.center{
+			text-align: center;
+		}
+	}
+
+	// Input Select
+	.input-select{
+		padding-right: 0;
+		padding-left: 20px;
+		&:after {
+			right: auto;
+			left: 0;
+		}
+	}
+
+	.top-bar .link.panel-open {
+		margin: 0 20px 30px 0;
+	}
+
+	// Check List
+	.check-list{
+		li {
+			padding: 5px 25px 5px 5px;
+			&:after {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+
+	// Notification
+	.notification-list{
+		ul li{
+			.item-title i {
+				margin-right: 0;
+				margin-left: 5px;
+			}
+			.time i {
+				margin-right: 0;
+				margin-left: 3px;
+			}
+		}
+	}
+
+	// Loading Area
+	#loading-area {
+		transform: rotateY(180deg);
+	}
+
+	.widget_getintuch ul li .icon-bx {
+		margin-right: 0;
+		margin-left: 15px;
+	}
+	.review-product .dz-media {
+		margin-right: 0;
+		margin-left: 22px;
+	}
+
+	// start-btn
+	.start-btn .icon-bx i {
+		margin-right: 0;
+		transform: rotate(-180deg);
+	}
+
+	.notification-bar .icon-bx {
+		margin-left: auto;
+		margin-right: 10px;
+	}
+	.categories-bx .bg-icon {
+		right: auto;
+		left: 0;
+	}
+
+	// item-bx
+	.item-bx{
+		.dz-info{
+			.rating i {
+				margin-right: 0;
+				margin-left: 5px;
+			}
+		}
+		.price del {
+			margin-left: auto;
+			margin-right: 8px;
+		}
+		.qty{
+			margin-left: 0;
+			margin-right: auto;
+			strong{
+				margin-right: auto;
+				margin-left: 5px;
+			}
+		}
+		&.style-1.item-list .dz-info {
+			padding: 18px 12px 15px 20px;
+		}
+		&.style-2{
+			padding: 12px 12px 12px 25px;
+			
+			.dz-info{
+				padding: 0 15px 0 0;
+			}
+		}
+
+	}
+
+	// Card Overlay
+	.card-overlay{
+		&.style-1{
+			padding: 30px 120px 35px 20px;
+			background-position: top 15px right;
+		
+			&:after {
+				right: auto;
+				left: -30px;
+			}
+			.offer span{
+				margin-left: auto;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	// dz-accordion
+	.dz-accordion{
+		.accordion-item{
+			.item-link.item-content{
+				padding-right: 0;
+		
+				.item-title {
+					padding-left: 0;
+					padding-right: 40px;
+					
+					&:before{
+						left: auto;
+						right: 0;
+					}
+					&:after{
+						left: auto;
+						right: 7px;
+					}
+				}
+			}
+		}
+	}
+	
+	.checkbox-form-control .checkbox {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	
+	// cart-item
+	.cart-item{
+		.item-body .dz-info {
+			padding: 0 18px 0 0;
+		}
+	}
+	
+	// item-details
+	.item-details{
+		.main-info{
+			.price del {
+				margin-left: auto;
+				margin-right: 8px;
+			}
+		}
+		.reviews-info i {
+			margin-right: auto;
+			margin-left: 10px;
+		}
+		.details-meta ul{
+			svg, i{
+				margin-right: auto;
+				margin-left: 10px;
+			}
+			li{
+				margin-right: auto;
+				margin-left: 15px;
+			}
+		}
+		.details-list li span {
+			float: left;
+		}
+	}
+	
+	// delivery-man
+	.delivery-man{
+		.dz-media {
+			margin-right: 0;
+			margin-left: 12px;
+		}
+		.icon-area {
+			margin-left: 0;
+			margin-right: auto;
+		}
+		.icon-cell{
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+	
+	// dz-timeline
+	.dz-timeline .timeline-item-divider {
+		margin-left: 30px;
+		margin-right: 0;
+	}
+	
+	.promo-bnr .dz-info .offer-bx .offer span {
+		margin-left: auto;
+		margin-right: 8px;
+	}
+	
+	.payment-card .card-media{
+		transform: scaleX(-1);
+	}
+
+}
