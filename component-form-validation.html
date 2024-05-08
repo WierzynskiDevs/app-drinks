@@ -56,455 +56,486 @@
         <div id="content">
             <!-- Start main_haeder -->
             <header class="main_haeder header-sticky multi_item">
-                <div class="em_menu_sidebar">
-                    <button type="button" class="btn btn_menuSidebar item-show" data-toggle="modal"
-                        data-target="#mdllSidebarMenu-background">
-                        <i class="ri-menu-fill"></i>
-                    </button>
-                </div>
-                <div class="em_brand">
-                    <a href="index.html">
-                        <img src="assets/img/logo-b.svg" alt="">
+                <div class="em_side_right">
+                    <a class="rounded-circle d-flex align-items-center text-decoration-none" href="app-components.html">
+                        <i class="tio-chevron_left size-24 color-text"></i>
+                        <span class="color-text size-14">Back</span>
                     </a>
                 </div>
+                <div class="title_page">
+                    <span class="page_name">
+                        Validation
+                    </span>
+                </div>
                 <div class="em_side_right">
-                    <button class="btn rounded-circle share-button bg-transparent margin-r-10" data-toggle="modal"
+                    <button class="btn rounded-circle share-button bg-transparent" data-toggle="modal"
                         data-target="#mdllButtons_share">
                         <i class="ri-share-forward-box-line"></i>
                     </button>
-                    <button type="button" class="btn btn_meunSearch" id="saerch-On-header">
-                        <i class="ri-search-2-line"></i>
-                    </button>
+
                 </div>
             </header>
             <!-- End.main_haeder -->
 
-            <main class="emPage__public">
+            <section class="padding-t-70 components_page padding-b-30">
 
-                <!-- Start banner_swiper -->
-                <section class="banner_swiper padding-t-70 bg-white">
-                    <div class="title_welcome">
-                        <span class="color-secondary size-16 weight-500">
-                            Hi, there
-                            <img class="w-20 h-20" src="assets/img/1f590.png" alt="">
-                        </span>
-                        <p class="size-13 weight-400 color-text mb-0">
-                            Enjoy Watching!
-                        </p>
-                    </div>
-                    <!-- Swiper -->
-                    <div class="owl-carousel owl-theme em-owlCentred em_owl_swipe margin-t-20">
-                        <div class="item em_item">
-                            <div class="em_cover_img">
-                                <img src="assets/img/home/0654.jpg" alt="">
-                                <div class="em_text">
-                                    <div class="">
-                                        <h2 class="offer_txt">Flexibility</h2>
-                                        <p class="color-snow size-12 mb-0">You Can Rapidly Build Modern Websites.</p>
-                                    </div>
+                <!-- Start title -->
+                <div class="emTitle_co padding-20">
+                    <h2 class="size-16 weight-500 color-secondary mb-1">Linear</h2>
+                    <p class="size-12 color-text m-0">
+                        You can remove or add class
+                        <code>.is-valid .is-invalid</code>
+                    </p>
+                </div>
+                <!-- End. title -->
 
-                                </div>
-                            </div>
+                <div class="bg-white padding-20">
+                    <form action="">
+                        <div class="form-group input-lined">
+                            <input type="text" id="username" class="form-control is-valid" value="Orino Studio"
+                                placeholder="John Smith" required="">
+                            <label for="username">Username</label>
                         </div>
-                        <div class="item em_item">
-                            <div class="em_cover_img">
-                                <img src="assets/img/home/065.png" alt="">
-                                <div class="em_text">
-                                    <div class="">
-                                        <h2 class="offer_txt">Components</h2>
-                                        <p class="color-snow size-12 mb-0">Ready to use many components.</p>
-                                    </div>
-
-                                </div>
-                            </div>
+                        <div class="form-group input-lined">
+                            <input type="email" class="form-control is-invalid" value="info@example.com" id="email"
+                                placeholder="example@mail.com" required="">
+                            <label for="email">Email Address</label>
                         </div>
-                        <div class="item em_item">
-                            <div class="em_cover_img">
-                                <img src="assets/img/home/fsadf564.jpg" alt="">
-                                <div class="em_text">
-                                    <div class="">
-                                        <h2 class="offer_txt">Clean Markup</h2>
-                                        <p class="color-snow size-12 mb-0">Clean and readable code.</p>
-                                    </div>
+                    </form>
+                </div>
 
-                                </div>
+                <!-- Start title -->
+                <div class="emTitle_co padding-20">
+                    <h2 class="size-16 weight-500 color-secondary mb-1">Additional Text</h2>
+                    <p class="size-12 color-text m-0">
+                        You can remove or add class
+                        <code>.is-valid .is-invalid</code>
+                    </p>
+                </div>
+                <!-- End. title -->
+
+                <div class="bg-white padding-20">
+                    <form action="">
+                        <div class="form-group input-lined d-block">
+                            <div class="group_additional">
+                                <input type="text" id="username" class="form-control is-valid" value="Orino Studio"
+                                    placeholder="John Smith" required="">
+                                <label for="username">Username</label>
                             </div>
+                            <div class="additional_txt">Enter numbers with the name</div>
                         </div>
-                        <div class="item em_item">
-                            <div class="em_cover_img">
-                                <img src="assets/img/home/00654.jpg" alt="">
-                                <div class="em_text">
-                                    <div class="">
-                                        <h2 class="offer_txt">PWA Ready</h2>
-                                        <p class="color-snow size-12 mb-0">Add to the home screen.</p>
-                                    </div>
-
-                                </div>
+                        <div class="form-group input-lined d-block">
+                            <div class="group_additional">
+                                <input type="password" id="pass" class="form-control is-invalid" value="12345679"
+                                    placeholder="enter your password" required="">
+                                <label for="pass">Password</label>
                             </div>
+                            <div class="invalid-feedback">Sorry!, this email already exists</div>
                         </div>
-                        <div class="item em_item">
-                            <div class="em_cover_img">
-                                <img src="assets/img/home/754.jpg" alt="">
-                                <div class="em_text">
-                                    <div class="">
-                                        <h2 class="offer_txt">Dark Mode</h2>
-                                        <p class="color-snow size-12 mb-0">Change theme mode easily.</p>
-                                    </div>
+                    </form>
+                </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item em_item">
-                            <div class="em_cover_img">
-                                <img src="assets/img/home/d987.jpg" alt="">
-                                <div class="em_text">
-                                    <div class="">
-                                        <h2 class="offer_txt">SCSS Files</h2>
-                                        <p class="color-snow size-12 mb-0">Professional-grade CSS extension language.
-                                        </p>
-                                    </div>
+                <!-- Start title -->
+                <div class="emTitle_co padding-20">
+                    <h2 class="size-16 weight-500 color-secondary mb-1">Default</h2>
+                    <p class="size-12 color-text m-0">
+                        You can remove or add class
+                        <code>.is-valid .is-invalid</code>
+                    </p>
+                </div>
+                <!-- End. title -->
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item em_item">
-                            <div class="em_cover_img">
-                                <img src="assets/img/home/d654.jpg" alt="">
-                                <div class="em_text">
-                                    <div class="">
-                                        <h2 class="offer_txt">Structured Files</h2>
-                                        <p class="color-snow size-12 mb-0">Find the structured files comfortably.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item em_item">
-                            <div class="em_cover_img">
-                                <img src="assets/img/home/d654f.jpg" alt="">
-                                <div class="em_text">
-                                    <div class="">
-                                        <h2 class="offer_txt">Custom Fonts</h2>
-                                        <p class="color-snow size-12 mb-0">You can use many custom fonts with ease.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item em_item">
-                            <div class="em_cover_img">
-                                <img src="assets/img/home/dsad654.jpg" alt="">
-                                <div class="em_text">
-                                    <div class="">
-                                        <h2 class="offer_txt">Bootstrap 4</h2>
-                                        <p class="color-snow size-12 mb-0">The most popular CSS framework.</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End. banner_swiper -->
-
-                <!-- Start block_page_Comp -->
-                <section class="block_page_Comp padding-l-20 padding-r-20 padding-t-30 padding-b-30 bg-white">
-                    <a href="app-pages.html" class="item margin-b-20">
-                        <div class="media">
-                            <div class="ico bg-orange stroke-orange bg-opacity-10">
-                                <svg id="Iconly_Curved_Document" data-name="Iconly/Curved/Document"
-                                    xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                                    <g id="Document" transform="translate(3.309 2.521)">
-                                        <path id="Stroke_1" data-name="Stroke 1" d="M6.618.5H0"
-                                            transform="translate(4.369 11.367)" fill="none" stroke="#41bd83"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                            stroke-width="1.5" />
-                                        <path id="Stroke_2" data-name="Stroke 2" d="M6.618.5H0"
-                                            transform="translate(4.369 7.921)" fill="none" stroke="#41bd83"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                            stroke-width="1.5" />
-                                        <path id="Stroke_3" data-name="Stroke 3" d="M2.525.5H0"
-                                            transform="translate(4.369 4.475)" fill="none" stroke="#41bd83"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                            stroke-width="1.5" />
-                                        <path id="Stroke_4" data-name="Stroke 4"
-                                            d="M0,8.479c0,6.359,1.923,8.479,7.692,8.479s7.692-2.12,7.692-8.479S13.461,0,7.692,0,0,2.12,0,8.479Z"
-                                            transform="translate(0)" fill="none" stroke="#41bd83" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="media-body">
-                                <div class="txt">
-                                    <h3>Pages</h3>
-                                    <p>All you need to build a great app!</p>
-
-                                    <div class="d-flex align-items-center">
-                                        <button type="button" class="btn btn_preview">Preview</button>
-                                        <span class="size-12 color-text padding-l-20">95+ Pages</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="app-components.html" class="item margin-b-20">
-                        <div class="media">
-                            <div class="ico bg-green bg-opacity-10 stroke-green">
-                                <svg id="Iconly_Curved_More_Circle" data-name="Iconly/Curved/More Circle"
-                                    xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                                    <g id="More_Circle" data-name="More Circle" transform="translate(2.521 2.521)">
-                                        <path id="Stroke_4" data-name="Stroke 4"
-                                            d="M0,8.479C0,2.12,2.12,0,8.479,0s8.479,2.12,8.479,8.479-2.12,8.479-8.479,8.479S0,14.838,0,8.479Z"
-                                            transform="translate(0 0)" fill="none" stroke="#ff702c"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                            stroke-width="1.5" />
-                                        <path id="Stroke_11" data-name="Stroke 11" d="M.5.5H.5"
-                                            transform="translate(10.921 9.721)" fill="none" stroke="#ff702c"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                            stroke-width="2" />
-                                        <path id="Stroke_13" data-name="Stroke 13" d="M.5.5H.5"
-                                            transform="translate(8.171 6.054)" fill="none" stroke="#ff702c"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                            stroke-width="2" />
-                                        <path id="Stroke_15" data-name="Stroke 15" d="M.5.5H.5"
-                                            transform="translate(5.413 9.721)" fill="none" stroke="#ff702c"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                            stroke-width="2" />
-                                    </g>
-                                </svg>
-
-                            </div>
-                            <div class="media-body">
-                                <div class="txt">
-                                    <h3>Components</h3>
-                                    <p>Numerous UI elements and components</p>
-
-                                    <div class="d-flex align-items-center">
-                                        <button type="button" class="btn btn_preview">Preview</button>
-                                        <span class="size-12 color-text padding-l-20">200+ Components</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="app-homes.html" class="item">
-                        <div class="media">
-                            <div class="ico bg-red stroke-red bg-opacity-10">
-                                <svg id="Iconly_Curved_Discovery" data-name="Iconly/Curved/Discovery"
-                                    xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-                                    <g id="Discovery" transform="translate(2.521 2.521)">
-                                        <path id="Stroke_1" data-name="Stroke 1"
-                                            d="M0,8.479c0,6.359,2.12,8.479,8.479,8.479s8.479-2.12,8.479-8.479S14.838,0,8.479,0,0,2.12,0,8.479Z"
-                                            transform="translate(0 0)" fill="none" stroke="#ff4040"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                            stroke-width="1.5" />
-                                        <path id="Stroke_3" data-name="Stroke 3"
-                                            d="M0,6.054,1.443,1.443,6.054,0,4.611,4.61Z"
-                                            transform="translate(5.452 5.453)" fill="none" stroke="#ff4040"
-                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                            stroke-width="1.5" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="media-body">
-                                <div class="txt">
-                                    <h3>Homepages</h3>
-                                    <p>All you need to build a great app!</p>
-
-                                    <div class="d-flex align-items-center">
-                                        <button type="button" class="btn btn_preview">Preview</button>
-                                        <span class="size-12 color-text padding-l-20">8+ homes</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
-                <!-- End. block_page_Comp -->
-
-                <!-- Start npAbout_sections -->
-                <section class="npAbout_sections emBlock__border margin-t-10">
-                    <div class="np__description">
-                        <span>
-                            Welcome to
-                        </span>
-                        <h1>
-                            Nepro. Mobile
-                        </h1>
-                        <p>
-                            We created an awesome set of pages to be readily available, but, using our incredible
-                            components, you can create pages with just a copy and paste!
-                        </p>
-                    </div>
-                </section>
-                <!-- End. npAbout_sections -->
-
-                <!-- Start bk_oiFeatures -->
-                <section class="em_swiper_products bk_oiFeatures padding-b-30 padding-t-30 bg-white margin-t-10">
-                    <div class="em_title_swiper pb-1">
-                        <div class="txt">
-                            <h2>Features</h2>
-                            <p>Enjoy many advantages</p>
-                        </div>
-                        <div class="item_link">
-                            <a href="app-components.html">Discover!</a>
-                        </div>
-                    </div>
-
-                    <div class="emBK__transactions">
-
-                        <div class="item_trans">
-                            <div class="media sideLeft">
-                                <div class="icon_img bg-orange">
-                                    <svg id="Iconly_Bulk_Folder" data-name="Iconly/Bulk/Folder"
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                        <g id="Folder" transform="translate(1.667 1.667)">
-                                            <path id="Folder_2" data-name="Folder 2"
-                                                d="M12.4,2.6H9.951a2.024,2.024,0,0,1-1.578-.739L7.565.74A1.973,1.973,0,0,0,5.994,0H4.261C1.148,0,0,1.827,0,4.932V8.289c0,.369,16.663.369,16.664,0V7.313C16.679,4.208,15.56,2.6,12.4,2.6Z"
-                                                transform="translate(0 0)" fill="#fff" opacity="0.4" />
-                                            <path id="Folder-2" data-name="Folder"
-                                                d="M11.972,14.084h0c-.086,0-.172,0-.258-.007H4.943c-.085,0-.171.006-.256.006A5.014,5.014,0,0,1,1.3,12.769a3.739,3.739,0,0,1-.556-.74A4.836,4.836,0,0,1,.089,10.21,6.79,6.79,0,0,1,0,9.108V4.731a10.12,10.12,0,0,1,.059-1.1C.068,3.573.08,3.51.092,3.45a1.579,1.579,0,0,0,.041-.309A4.682,4.682,0,0,1,.541,1.877C1.128.623,2.34.013,4.246.013H12.4C12.507,0,12.62,0,12.731,0a4.368,4.368,0,0,1,2.688.93,2.316,2.316,0,0,1,.274.274A3.279,3.279,0,0,1,16.3,2.261a7.092,7.092,0,0,1,.363,2.47V9.108a7.868,7.868,0,0,1-.082,1.1,4.968,4.968,0,0,1-.667,1.819,3.7,3.7,0,0,1-.563.74A4.986,4.986,0,0,1,11.972,14.084ZM4.142,7.326a.688.688,0,1,0,0,1.376h8.433a.688.688,0,0,0,.688-.666.619.619,0,0,0-.148-.444.657.657,0,0,0-.519-.266Z"
-                                                transform="translate(0 2.583)" fill="#fff" />
+                <div class="bg-white padding-20">
+                    <form action="">
+                        <div class="form-group with_icon">
+                            <label>Username</label>
+                            <div class="input_group">
+                                <input type="text" class="form-control is-valid" value="Orino Studio"
+                                    placeholder="John Smith" required="">
+                                <div class="icon">
+                                    <svg id="Iconly_Two-tone_Profile" data-name="Iconly/Two-tone/Profile"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g id="Profile" transform="translate(4 2)">
+                                            <circle id="Ellipse_736" cx="4.778" cy="4.778" r="4.778"
+                                                transform="translate(2.801 0)" fill="none" stroke="#200e32"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5" opacity="0.4"></circle>
+                                            <path id="Path_33945"
+                                                d="M0,3.016a2.215,2.215,0,0,1,.22-.97A4.042,4.042,0,0,1,3.039.426,16.787,16.787,0,0,1,5.382.1,25.053,25.053,0,0,1,9.767.1a16.979,16.979,0,0,1,2.343.33c1.071.22,2.362.659,2.819,1.62a2.27,2.27,0,0,1,0,1.95c-.458.961-1.748,1.4-2.819,1.611a15.716,15.716,0,0,1-2.343.339A25.822,25.822,0,0,1,6.2,6a4.066,4.066,0,0,1-.815-.055,15.423,15.423,0,0,1-2.334-.339C1.968,5.4.687,4.957.22,4A2.279,2.279,0,0,1,0,3.016Z"
+                                                transform="translate(0 13.185)" fill="none" stroke="#200e32"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5"></path>
                                         </g>
                                     </svg>
-
-                                </div>
-                                <div class="media-body my-auto">
-                                    <h4>Structured Files</h4>
-                                    <p>Find what you're looking for with structured files.</p>
                                 </div>
                             </div>
-
                         </div>
 
-                        <div class="item_trans">
-                            <div class="media sideLeft">
-                                <div class="icon_img bg-yellow">
-                                    <svg id="Stockholm-icons-_-Devices-_-iPhone-x-back"
-                                        data-name="Stockholm-icons-/-Devices-/-iPhone-x-back"
-                                        xmlns="http://www.w3.org/2000/svg" width="20.954" height="20.954"
-                                        viewBox="0 0 20.954 20.954">
-                                        <rect id="bound" width="20.954" height="20.954" fill="none" />
-                                        <path id="Combined-Shape"
-                                            d="M7.746,2h6.985a1.746,1.746,0,0,1,1.746,1.746V17.715a1.746,1.746,0,0,1-1.746,1.746H7.746A1.746,1.746,0,0,1,6,17.715V3.746A1.746,1.746,0,0,1,7.746,2Zm0,.873a.873.873,0,0,0-.873.873V5.492a.873.873,0,0,0,1.746,0V3.746A.873.873,0,0,0,7.746,2.873Z"
-                                            transform="translate(-0.762 -0.254)" fill="#fff" fill-rule="evenodd" />
+                        <div class="form-group">
+                            <label>Country</label>
+                            <select class="form-control custom-select is-invalid">
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Åland Islands">Åland Islands</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="American Samoa">American Samoa</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Anguilla">Anguilla</option>
+                                <option value="Antarctica">Antarctica</option>
+                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Aruba">Aruba</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bermuda">Bermuda</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Bouvet Island">Bouvet Island</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Cape Verde">Cape Verde</option>
+                                <option value="Cayman Islands">Cayman Islands</option>
+                                <option value="Central African Republic">Central African Republic</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Christmas Island">Christmas Island</option>
+                                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of
+                                    The
+                                </option>
+                                <option value="Cook Islands">Cook Islands</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cote D'ivoire">Cote D'ivoire</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czech Republic">Czech Republic</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic">Dominican Republic</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                <option value="Faroe Islands">Faroe Islands</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="French Guiana">French Guiana</option>
+                                <option value="French Polynesia">French Polynesia</option>
+                                <option value="French Southern Territories">French Southern Territories</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Gibraltar">Gibraltar</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Greenland">Greenland</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guadeloupe">Guadeloupe</option>
+                                <option value="Guam">Guam</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guernsey">Guernsey</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-bissau">Guinea-bissau</option>
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands
+                                </option>
+                                <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jersey">Jersey</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's
+                                    Republic
+                                    of</option>
+                                <option value="Korea, Republic of">Korea, Republic of</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Lao People's Democratic Republic">Lao People's Democratic Republic
+                                </option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Macao">Macao</option>
+                                <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former
+                                    Yugoslav
+                                    Republic of</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands">Marshall Islands</option>
+                                <option value="Martinique">Martinique</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mayotte">Mayotte</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montenegro">Montenegro</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar">Myanmar</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                <option value="New Caledonia">New Caledonia</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Niue">Niue</option>
+                                <option value="Norfolk Island">Norfolk Island</option>
+                                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Pitcairn">Pitcairn</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russian Federation">Russian Federation</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Saint Helena">Saint Helena</option>
+                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                <option value="Saint Lucia">Saint Lucia</option>
+                                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines
+                                </option>
+                                <option value="Samoa">Samoa</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serbia">Serbia</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands">Solomon Islands</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="South Georgia and The South Sandwich Islands">South Georgia and The South
+                                    Sandwich Islands</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                <option value="Swaziland">Swaziland</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Timor-leste">Timor-leste</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tokelau">Tokelau</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="United States Minor Outlying Islands">United States Minor Outlying
+                                    Islands
+                                </option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Viet Nam">Viet Nam</option>
+                                <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                <option value="Western Sahara">Western Sahara</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                            <div class="invalid-feedback">This field is required</div>
+                        </div>
+
+                        <div class="form-group with_icon mb-2" id="show_hide_password">
+                            <label>Password</label>
+                            <div class="input_group">
+                                <input type="password" class="form-control is-invalid" value="12346579"
+                                    placeholder="enter your password" required="">
+                                <div class="icon">
+                                    <svg id="Iconly_Two-tone_Password" data-name="Iconly/Two-tone/Password"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g id="Password" transform="translate(2 2)">
+                                            <path id="Stroke_1" data-name="Stroke 1"
+                                                d="M13.584,0H4.915C1.894,0,0,2.139,0,5.166v8.168C0,16.361,1.885,18.5,4.915,18.5h8.668c3.031,0,4.917-2.139,4.917-5.166V5.166C18.5,2.139,16.614,0,13.584,0Z"
+                                                transform="translate(0.75 0.75)" fill="none" stroke="#200e32"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5" opacity="0.4"></path>
+                                            <path id="Stroke_3" data-name="Stroke 3"
+                                                d="M3.7,1.852A1.852,1.852,0,1,1,1.851,0,1.852,1.852,0,0,1,3.7,1.852Z"
+                                                transform="translate(4.989 8.148)" fill="none" stroke="#200e32"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5"></path>
+                                            <path id="Stroke_5" data-name="Stroke 5" d="M0,0H6.318V1.852"
+                                                transform="translate(8.692 10)" fill="none" stroke="#200e32"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5"></path>
+                                            <path id="Stroke_7" data-name="Stroke 7" d="M.5,1.852V0"
+                                                transform="translate(11.682 10)" fill="none" stroke="#200e32"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5"></path>
+                                        </g>
                                     </svg>
-
                                 </div>
-                                <div class="media-body my-auto">
-                                    <h4>PWA Ready</h4>
-                                    <p>Add to the home screen and use it as an app.</p>
-                                </div>
+                                <button type="button" class="btn hide_show icon_password">
+                                    <i class="tio-hidden_outlined"></i>
+                                </button>
                             </div>
-
+                            <div class="invalid-feedback">It must contain capital letters and symbols</div>
                         </div>
+                    </form>
+                </div>
 
-                        <div class="item_trans">
-                            <div class="media sideLeft">
-                                <div class="icon_img bg-green">
-                                    <svg id="Stockholm-icons-_-Files-_-Folder-check"
-                                        data-name="Stockholm-icons-/-Files-/-Folder-check"
-                                        xmlns="http://www.w3.org/2000/svg" width="20.51" height="20.51"
-                                        viewBox="0 0 20.51 20.51">
-                                        <rect id="bound" width="20.51" height="20.51" fill="none" />
-                                        <path id="Combined-Shape"
-                                            d="M3.282,18.528H17.81a1.282,1.282,0,0,0,1.282-1.282v-9.4A1.282,1.282,0,0,0,17.81,6.564H8.837L6.648,4.375A1.282,1.282,0,0,0,5.742,4H3.282A1.282,1.282,0,0,0,2,5.282V17.246A1.282,1.282,0,0,0,3.282,18.528Z"
-                                            transform="translate(-0.291 -0.582)" fill="#fff" fill-rule="evenodd"
-                                            opacity="0.3" />
-                                        <path id="check-path"
-                                            d="M10.457,15.914a.808.808,0,0,1-.573-.246L8.246,14.03a.811.811,0,0,1,1.147-1.147l1.065,1.065,2.7-2.7a.811.811,0,1,1,1.147,1.147L11.03,15.668A.808.808,0,0,1,10.457,15.914Z"
-                                            transform="translate(-1.163 -1.6)" fill="#fff" fill-rule="evenodd" />
-                                    </svg>
+                <!-- Start title -->
+                <div class="emTitle_co padding-20">
+                    <h2 class="size-16 weight-500 color-secondary mb-1">Without Icons</h2>
+                    <p class="size-12 color-text m-0">
+                        You can remove or add class
+                        <code>.is-valid .is-invalid</code>
+                    </p>
+                </div>
+                <!-- End. title -->
 
-                                </div>
-                                <div class="media-body my-auto">
-                                    <h4>Clean Markup</h4>
-                                    <p>Clean and readable code structure and validated by W3C.</p>
-                                </div>
+                <div class="bg-white padding-20">
+                    <form action="">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <div class="input_group">
+                                <input type="text" class="form-control is-valid" value="Orino Studio"
+                                    placeholder="John Smith" required="">
                             </div>
-
                         </div>
-
-                    </div>
-
-                </section>
-                <!-- End. bk_oiFeatures -->
-
-                <!-- Start box_darkMode -->
-                <section class="bg-white margin-t-10 emBlock__border padding-b-30">
-                    <!-- Start box_darkMode -->
-                    <div class="padding-20 padding-t-30 padding-b-30">
-                        <div class="box_darkMode em_darkMode_menu">
-                            <label class="text mb-0 d-flex align-items-center" for="switchDarkModeContent">
-                                <div class="mt-1">
-                                    <h3 class="size-16 weight-600 mb-0">Dark Mode</h3>
-                                    <p class="size-12 color-text m-0">Browsing in night mode</p>
-                                </div>
-                            </label>
-                            <label class="switch_toggle toggle_lg" for="switchDarkModeContent">
-                                <input type="checkbox" class="switchDarkMode" id="switchDarkModeContent">
-                                <span class="handle"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <!-- End. box_darkMode -->
-
-                    <div class="padding-20 py-0">
-                        <h3 class="size-20 weight-600 color-secondary mb-1">Get Nepro. Today</h3>
-                        <p class="size-13 color-text mb-3">Many of awesome Features just for You.</p>
-                        <a href="#"
-                            class="btn bg-primary color-white size-15 weight-500 min-w-170 h-52 rounded-10 d-inline-flex align-items-center justify-content-center">
-                            <div class="icon pr-2">
-                                <i class="tio-shopping color-white size-20"></i>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <div class="input_group">
+                                <input type="email" class="form-control is-invalid" value="info@example.com"
+                                    placeholder="example@mail.com" required="">
                             </div>
-                            <span>Buy Now $24</span>
-                        </a>
-                    </div>
-
-                </section>
-                <!-- End. box_darkMode -->
-
-                <!-- Start emSimple_main_footer -->
-                <section
-                    class="emSimple_main_footer margin-t-10 border-t border-t-solid border-snow bg-white d-flex justify-content-center text-center padding-20">
-                    <div class="padding-t-10 padding-b-10">
-                        <a href="index.html" class="brand_sm margin-b-20 d-block">
-                            <img src="assets/img/logo-b.svg" alt="">
-                        </a>
-                        <h3 class="size-13 weight-400 color-secondary margin-b-10">
-                            Copyright © Nepro 2021. All Rights Reserved.
-                        </h3>
-                        <p class="size-12 color-text margin-b-20">
-                            Nepro is Mobile Multipurpose Template. Professionally built with a high UX to give your page
-                            the great look.
-                        </p>
-                        <div class="itemNetworks mt-2 emBlock__border">
-                            <a href="#" class="btn facebook">
-                                <img src="assets/img/icon/facebook.svg" alt="">
-                            </a>
-                            <a href="#" class="btn instagram">
-                                <img src="assets/img/icon/instagram.svg" alt="">
-                            </a>
-                            <a href="#" class="btn youtube">
-                                <img src="assets/img/icon/youtube.svg" alt="">
-                            </a>
-                            <a href="#" class="btn twitter">
-                                <i class="ri-twitter-fill color-twitter"></i>
-                            </a>
-                            <button type="button" class="btn share" data-toggle="modal"
-                                data-target="#mdllButtons_share">
-                                <i class="ri-share-forward-box-line color-green"></i>
-                            </button>
+                            <div class="invalid-feedback">Sorry!, this email already exists</div>
                         </div>
-                        <div class="link_privacy">
-                            <a href="#" class="btn">Privacy Policy</a>
-                            <a href="#" class="btn">Terms of Uses</a>
-                        </div>
-                    </div>
-                </section>
-                <!-- End. emSimple_main_footer -->
+                    </form>
+                </div>
 
-            </main>
+                <!-- Start title -->
+                <div class="emTitle_co padding-20">
+                    <h2 class="size-16 weight-500 color-secondary mb-1">Animated</h2>
+                    <p class="size-12 color-text m-0">
+                        You can remove or add class
+                        <code>.is-valid .is-invalid</code>
+                    </p>
+                </div>
+                <!-- End. title -->
+
+                <div class="bg-white padding-20">
+                    <form action="">
+
+                        <div class="form-group inputDefault-animated">
+                            <div class="group_anime">
+                                <input type="text" class="form-control is-invalid" value="info@example.com"
+                                    placeholder="example@mail.com" required="">
+                                <label>Email Address</label>
+                            </div>
+                            <div class="invalid-feedback">Sorry!, this email already exists</div>
+                        </div>
+                        <div class="form-group inputDefault-animated">
+                            <div class="group_anime">
+                                <input type="text" class="form-control is-valid" value="01 01564 988 741"
+                                    placeholder="+10 915 613 4509" required="">
+                                <label>Phone Number</label>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </section>
 
         </div>
         <!-- Start em_main_footer -->
