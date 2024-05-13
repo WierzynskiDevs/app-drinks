@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="theme-color" content="#ffffff">
+    <title>Vinhos App</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon/32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/img/favicon/favicon192.png">
+
+    <!-- CSS Libraries-->
+    <!-- bootstrap v4.6.0 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--
+            theiconof v3.0
+            https://www.theiconof.com/search
+         -->
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <!-- Swiper 6.4.11 -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Owl Carousel v2.3.4 -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- normalize.css v8.0.1 -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <!-- manifest meta -->
+    <link rel="manifest" href="_manifest.json" />
+</head>
+
+
+<body class="bg-snow">
+
+    <!-- Start em_loading -->
+    <section class="em_loading" id="loaderPage">
+        <div class="spinner_flash"></div>
+    </section>
+    <!-- End. em_loading -->
+
+    <div id="wrapper">
+        <div id="content">
+            <!-- Start main_haeder -->
+            <header class="main_haeder header-sticky multi_item">
+                <div class="em_menu_sidebar">
+                    <button type="button" class="btn btn_meunSearch" id="saerch-On-header">
+                        <i class="ri-search-2-line"></i>
+                    </button>
+                </div>
+                <div class="title_page">
+                    <span class="page_name">Promoções Tempo <br>Limitado</span>
+                </div>
+            </header>
+            <!-- End.main_haeder -->
+
+            <!-- Start navListProducts -->
+            <section class="padding-t-60">
+
+                <ul class="nav nav-pills navListProducts bg-secondary" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-pickup-tab" data-toggle="pill" href="#pills-pickup"
+                            role="tab" aria-controls="pills-pickup" aria-selected="true">Lojas físicas</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-delivery-tab" data-toggle="pill" href="#pills-delivery" role="tab"
+                            aria-controls="pills-delivery" aria-selected="false">Entrega</a>
+                    </li>
+                </ul>
+
+            </section>
+            <!-- End. navListProducts -->
+
+            <!-- Start Standard layout -->
+            <section class="em_masonry__layout bg-snow em_list_layout margin-b-20 widthFull">
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-pickup" role="tabpanel"
+                        aria-labelledby="pills-pickup-tab">
+
+                        <div>
+                            <!-- item -->
+                            <div class="item em_item_product item_list">
+                                <div class="em_head">
+                                    <a href="#" class="image_product">
+                                        <img src="assets/img/01.jpg" alt="">
+                                    </a>
+                                    <div class="item_discount">-15%</div>
+                                </div>
+                                <div class="title_product">
+                                    <button type="button" class="btn rounded-8 btn_addBookmark item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.6648 18.6316L5.73341 21.8811C5.25984 22.1272 4.67641 21.953 4.41533 21.4875V21.4875C4.3398 21.3433 4.29905 21.1834 4.29634 21.0206V6.62247C4.29634 3.87647 6.17277 2.77808 8.873 2.77808H15.2162C17.8341 2.77808 19.7929 3.80325 19.7929 6.4394V21.0206C19.7929 21.2804 19.6897 21.5295 19.506 21.7132C19.3224 21.8969 19.0733 22 18.8135 22C18.6478 21.9974 18.485 21.9567 18.3375 21.8811L12.3696 18.6316C12.1497 18.5128 11.8847 18.5128 11.6648 18.6316Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path opacity="0.4" d="M8.36957 9.32266H15.6648" stroke="#200E32"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="icon_active"></span>
+                                    </button>
+
+                                    <div class="itemRating">
+                                        <span class="number">4.2</span>
+                                        <span class="users">9 Avaliações</span>
+                                    </div>
+                                    <h3>Vinho Tinto</h3>
+                                    <p class="item_price">R$118.00 <span class="price_old">R$127.00</span></p>
+
+                                    <button type="button" class="btn btn_addCart item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.75 8.32727C12.75 7.91306 12.4142 7.57727 12 7.57727C11.5858 7.57727 11.25 7.91306 11.25 8.32727V11.2405H8.33333C7.91911 11.2405 7.58333 11.5763 7.58333 11.9905C7.58333 12.4047 7.91911 12.7405 8.33333 12.7405H11.25V15.6536C11.25 16.0678 11.5858 16.4036 12 16.4036C12.4142 16.4036 12.75 16.0678 12.75 15.6536V12.7405H15.6667C16.0809 12.7405 16.4167 12.4047 16.4167 11.9905C16.4167 11.5763 16.0809 11.2405 15.6667 11.2405H12.75V8.32727Z"
+                                                fill="#200E32" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="icon_active"></div>
+                                        <span class="txt_added">Adicionado!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item em_item_product item_list">
+                                <div class="em_head">
+                                    <a href="#" class="image_product">
+                                        <img src="assets/img/02.jpg" alt="">
+                                    </a>
+                                    <div class="item_discount">-15%</div>
+                                </div>
+                                <div class="title_product">
+                                    <button type="button" class="btn rounded-8 btn_addBookmark item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.6648 18.6316L5.73341 21.8811C5.25984 22.1272 4.67641 21.953 4.41533 21.4875V21.4875C4.3398 21.3433 4.29905 21.1834 4.29634 21.0206V6.62247C4.29634 3.87647 6.17277 2.77808 8.873 2.77808H15.2162C17.8341 2.77808 19.7929 3.80325 19.7929 6.4394V21.0206C19.7929 21.2804 19.6897 21.5295 19.506 21.7132C19.3224 21.8969 19.0733 22 18.8135 22C18.6478 21.9974 18.485 21.9567 18.3375 21.8811L12.3696 18.6316C12.1497 18.5128 11.8847 18.5128 11.6648 18.6316Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path opacity="0.4" d="M8.36957 9.32266H15.6648" stroke="#200E32"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="icon_active"></span>
+                                    </button>
+
+                                    <div class="itemRating">
+                                        <span class="number">4.2</span>
+                                        <span class="users">9 Avaliações</span>
+                                    </div>
+                                    <h3>Vinho Rose</h3>
+                                    <p class="item_price">R$118.00 <span class="price_old">R$127.00</span></p>
+
+                                    <button type="button" class="btn btn_addCart item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.75 8.32727C12.75 7.91306 12.4142 7.57727 12 7.57727C11.5858 7.57727 11.25 7.91306 11.25 8.32727V11.2405H8.33333C7.91911 11.2405 7.58333 11.5763 7.58333 11.9905C7.58333 12.4047 7.91911 12.7405 8.33333 12.7405H11.25V15.6536C11.25 16.0678 11.5858 16.4036 12 16.4036C12.4142 16.4036 12.75 16.0678 12.75 15.6536V12.7405H15.6667C16.0809 12.7405 16.4167 12.4047 16.4167 11.9905C16.4167 11.5763 16.0809 11.2405 15.6667 11.2405H12.75V8.32727Z"
+                                                fill="#200E32" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="icon_active"></div>
+                                        <span class="txt_added">Adicionado!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item em_item_product item_list">
+                                <div class="em_head">
+                                    <a href="#" class="image_product">
+                                        <img src="assets/img/03.jpg" alt="">
+                                    </a>
+                                    <div class="item_discount">-15%</div>
+                                </div>
+                                <div class="title_product">
+                                    <button type="button" class="btn rounded-8 btn_addBookmark item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.6648 18.6316L5.73341 21.8811C5.25984 22.1272 4.67641 21.953 4.41533 21.4875V21.4875C4.3398 21.3433 4.29905 21.1834 4.29634 21.0206V6.62247C4.29634 3.87647 6.17277 2.77808 8.873 2.77808H15.2162C17.8341 2.77808 19.7929 3.80325 19.7929 6.4394V21.0206C19.7929 21.2804 19.6897 21.5295 19.506 21.7132C19.3224 21.8969 19.0733 22 18.8135 22C18.6478 21.9974 18.485 21.9567 18.3375 21.8811L12.3696 18.6316C12.1497 18.5128 11.8847 18.5128 11.6648 18.6316Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path opacity="0.4" d="M8.36957 9.32266H15.6648" stroke="#200E32"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="icon_active"></span>
+                                    </button>
+
+                                    <div class="itemRating">
+                                        <span class="number">4.2</span>
+                                        <span class="users">9 Avaliações</span>
+                                    </div>
+                                    <h3>Vinho Seco</h3>
+                                    <p class="item_price">R$118.00 <span class="price_old">R$127.00</span></p>
+
+                                    <button type="button" class="btn btn_addCart item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.75 8.32727C12.75 7.91306 12.4142 7.57727 12 7.57727C11.5858 7.57727 11.25 7.91306 11.25 8.32727V11.2405H8.33333C7.91911 11.2405 7.58333 11.5763 7.58333 11.9905C7.58333 12.4047 7.91911 12.7405 8.33333 12.7405H11.25V15.6536C11.25 16.0678 11.5858 16.4036 12 16.4036C12.4142 16.4036 12.75 16.0678 12.75 15.6536V12.7405H15.6667C16.0809 12.7405 16.4167 12.4047 16.4167 11.9905C16.4167 11.5763 16.0809 11.2405 15.6667 11.2405H12.75V8.32727Z"
+                                                fill="#200E32" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="icon_active"></div>
+                                        <span class="txt_added">Adicionado!</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">
+                        <div>
+                            <!-- item -->
+                            <div class="item em_item_product item_list">
+                                <div class="em_head">
+                                    <a href="#" class="image_product">
+                                        <img src="assets/img/01.jpg" alt="">
+                                    </a>
+                                    <div class="item_discount">-15%</div>
+                                </div>
+                                <div class="title_product">
+                                    <button type="button" class="btn rounded-8 btn_addBookmark item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.6648 18.6316L5.73341 21.8811C5.25984 22.1272 4.67641 21.953 4.41533 21.4875V21.4875C4.3398 21.3433 4.29905 21.1834 4.29634 21.0206V6.62247C4.29634 3.87647 6.17277 2.77808 8.873 2.77808H15.2162C17.8341 2.77808 19.7929 3.80325 19.7929 6.4394V21.0206C19.7929 21.2804 19.6897 21.5295 19.506 21.7132C19.3224 21.8969 19.0733 22 18.8135 22C18.6478 21.9974 18.485 21.9567 18.3375 21.8811L12.3696 18.6316C12.1497 18.5128 11.8847 18.5128 11.6648 18.6316Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path opacity="0.4" d="M8.36957 9.32266H15.6648" stroke="#200E32"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="icon_active"></span>
+                                    </button>
+
+                                    <div class="itemRating">
+                                        <span class="number">4.2</span>
+                                        <span class="users">9 Avaliações</span>
+                                    </div>
+                                    <h3>Vinho Tinto</h3>
+                                    <p class="item_price">R$118.00 <span class="price_old">R$127.00</span></p>
+
+                                    <button type="button" class="btn btn_addCart item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.75 8.32727C12.75 7.91306 12.4142 7.57727 12 7.57727C11.5858 7.57727 11.25 7.91306 11.25 8.32727V11.2405H8.33333C7.91911 11.2405 7.58333 11.5763 7.58333 11.9905C7.58333 12.4047 7.91911 12.7405 8.33333 12.7405H11.25V15.6536C11.25 16.0678 11.5858 16.4036 12 16.4036C12.4142 16.4036 12.75 16.0678 12.75 15.6536V12.7405H15.6667C16.0809 12.7405 16.4167 12.4047 16.4167 11.9905C16.4167 11.5763 16.0809 11.2405 15.6667 11.2405H12.75V8.32727Z"
+                                                fill="#200E32" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="icon_active"></div>
+                                        <span class="txt_added">Adicionado!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item em_item_product item_list">
+                                <div class="em_head">
+                                    <a href="#" class="image_product">
+                                        <img src="assets/img/02.jpg" alt="">
+                                    </a>
+                                    <div class="item_discount">-15%</div>
+                                </div>
+                                <div class="title_product">
+                                    <button type="button" class="btn rounded-8 btn_addBookmark item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.6648 18.6316L5.73341 21.8811C5.25984 22.1272 4.67641 21.953 4.41533 21.4875V21.4875C4.3398 21.3433 4.29905 21.1834 4.29634 21.0206V6.62247C4.29634 3.87647 6.17277 2.77808 8.873 2.77808H15.2162C17.8341 2.77808 19.7929 3.80325 19.7929 6.4394V21.0206C19.7929 21.2804 19.6897 21.5295 19.506 21.7132C19.3224 21.8969 19.0733 22 18.8135 22C18.6478 21.9974 18.485 21.9567 18.3375 21.8811L12.3696 18.6316C12.1497 18.5128 11.8847 18.5128 11.6648 18.6316Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path opacity="0.4" d="M8.36957 9.32266H15.6648" stroke="#200E32"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="icon_active"></span>
+                                    </button>
+
+                                    <div class="itemRating">
+                                        <span class="number">4.2</span>
+                                        <span class="users">9 Avaliações</span>
+                                    </div>
+                                    <h3>Vinho Rose</h3>
+                                    <p class="item_price">R$118.00 <span class="price_old">R$127.00</span></p>
+
+                                    <button type="button" class="btn btn_addCart item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.75 8.32727C12.75 7.91306 12.4142 7.57727 12 7.57727C11.5858 7.57727 11.25 7.91306 11.25 8.32727V11.2405H8.33333C7.91911 11.2405 7.58333 11.5763 7.58333 11.9905C7.58333 12.4047 7.91911 12.7405 8.33333 12.7405H11.25V15.6536C11.25 16.0678 11.5858 16.4036 12 16.4036C12.4142 16.4036 12.75 16.0678 12.75 15.6536V12.7405H15.6667C16.0809 12.7405 16.4167 12.4047 16.4167 11.9905C16.4167 11.5763 16.0809 11.2405 15.6667 11.2405H12.75V8.32727Z"
+                                                fill="#200E32" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="icon_active"></div>
+                                        <span class="txt_added">Adicionado!</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="item em_item_product item_list">
+                                <div class="em_head">
+                                    <a href="#" class="image_product">
+                                        <img src="assets/img/03.jpg" alt="">
+                                    </a>
+                                    <div class="item_discount">-15%</div>
+                                </div>
+                                <div class="title_product">
+                                    <button type="button" class="btn rounded-8 btn_addBookmark item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.6648 18.6316L5.73341 21.8811C5.25984 22.1272 4.67641 21.953 4.41533 21.4875V21.4875C4.3398 21.3433 4.29905 21.1834 4.29634 21.0206V6.62247C4.29634 3.87647 6.17277 2.77808 8.873 2.77808H15.2162C17.8341 2.77808 19.7929 3.80325 19.7929 6.4394V21.0206C19.7929 21.2804 19.6897 21.5295 19.506 21.7132C19.3224 21.8969 19.0733 22 18.8135 22C18.6478 21.9974 18.485 21.9567 18.3375 21.8811L12.3696 18.6316C12.1497 18.5128 11.8847 18.5128 11.6648 18.6316Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path opacity="0.4" d="M8.36957 9.32266H15.6648" stroke="#200E32"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span class="icon_active"></span>
+                                    </button>
+
+                                    <div class="itemRating">
+                                        <span class="number">4.2</span>
+                                        <span class="users">9 Avaliações</span>
+                                    </div>
+                                    <h3>Vinho Seco</h3>
+                                    <p class="item_price">R$118.00 <span class="price_old">R$127.00</span></p>
+
+                                    <button type="button" class="btn btn_addCart item-active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.75 8.32727C12.75 7.91306 12.4142 7.57727 12 7.57727C11.5858 7.57727 11.25 7.91306 11.25 8.32727V11.2405H8.33333C7.91911 11.2405 7.58333 11.5763 7.58333 11.9905C7.58333 12.4047 7.91911 12.7405 8.33333 12.7405H11.25V15.6536C11.25 16.0678 11.5858 16.4036 12 16.4036C12.4142 16.4036 12.75 16.0678 12.75 15.6536V12.7405H15.6667C16.0809 12.7405 16.4167 12.4047 16.4167 11.9905C16.4167 11.5763 16.0809 11.2405 15.6667 11.2405H12.75V8.32727Z"
+                                                fill="#200E32" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z"
+                                                stroke="#200E32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="icon_active"></div>
+                                        <span class="txt_added">Adicionado!</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- End. Standard layout -->
+
+            <!-- Start spinner_loading -->
+            <div class="spinner_loading">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <!-- End. spinner_loading -->
+
+
+        </div>
+        <!-- Start em_main_footer -->
+        <footer class="em_main_footer with__text just_color p-0">
+            <div class="em_body_navigation -active-links -active_primary position-fixed">
+                <div class="item_link">
+                    <a href="home.html" class="btn btn_navLink ">
+                        <div class="icon_current">
+                            <svg id="Iconly_Two-tone_Calendar" data-name="Iconly/Two-tone/Calendar"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Calendar" transform="translate(3 2)">
+                                    <path id="Line_200" d="M0,.473H17.824" transform="translate(0.093 6.931)"
+                                        fill="none" stroke="#200e32" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10" stroke-width="1.5" opacity="0.4" />
+                                    <path id="Combined_Shape" data-name="Combined Shape"
+                                        d="M9.343,4.36h.009Zm-4.438,0h.01Zm-4.446,0H.468ZM9.343.473h.009Zm-4.438,0h.01ZM.459.473H.468Z"
+                                        transform="translate(4.099 10.837)" fill="none" stroke="#200e32"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" opacity="0.4" />
+                                    <path id="Line_207" d="M.463,0V3.291" transform="translate(12.581 0)" fill="none"
+                                        stroke="#200e32" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10" stroke-width="1.5" />
+                                    <path id="Line_208" d="M.463,0V3.291" transform="translate(4.502 0)" fill="none"
+                                        stroke="#200e32" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10" stroke-width="1.5" />
+                                    <path id="Path"
+                                        d="M13.238,0H4.771C1.834,0,0,1.636,0,4.643v9.05c0,3.054,1.834,4.728,4.771,4.728h8.458c2.946,0,4.771-1.645,4.771-4.652V4.643C18.009,1.636,16.184,0,13.238,0Z"
+                                        transform="translate(0 1.579)" fill="none" stroke="#200e32"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="icon_active">
+                            <svg id="Iconly_Bulk_Calendar" data-name="Iconly/Bulk/Calendar"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Calendar" transform="translate(3 2)">
+                                    <path id="Fill_1" data-name="Fill 1"
+                                        d="M5.127,12.743A4.776,4.776,0,0,1,0,7.613V0H18V7.674c0,3.138-1.976,5.069-5.137,5.069Z"
+                                        transform="translate(0 7.257)" fill="#200e32" />
+                                    <path id="Fill_4" data-name="Fill 4"
+                                        d="M0,5.767A15.855,15.855,0,0,1,.155,3.64,4.591,4.591,0,0,1,4.541,0h8.911a4.639,4.639,0,0,1,4.386,3.64,15.892,15.892,0,0,1,.154,2.127Z"
+                                        transform="translate(0.003 1.49)" fill="#200e32" opacity="0.4" />
+                                    <path id="Fill_6" data-name="Fill 6"
+                                        d="M.761,4.59a.747.747,0,0,0,.761-.77V.771A.748.748,0,0,0,.761,0,.748.748,0,0,0,0,.771V3.82a.747.747,0,0,0,.761.77"
+                                        transform="translate(4.544 0)" fill="#200e32" />
+                                    <path id="Fill_9" data-name="Fill 9"
+                                        d="M.761,4.59a.753.753,0,0,0,.761-.77V.771A.754.754,0,0,0,.761,0,.748.748,0,0,0,0,.771V3.82a.747.747,0,0,0,.761.77"
+                                        transform="translate(11.934 0)" fill="#200e32" />
+                                </g>
+                            </svg>
+
+                        </div>
+                        <div class="txt__tile">Home</div>
+                    </a>
+                </div>
+                <div class="item_link">
+
+                    <a href="page-products-fullwidth.html" class="btn btn_navLink active">
+                        <div class="icon_current">
+                            <svg id="Iconly_Curved_Bag" data-name="Iconly/Curved/Bag" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Bag" transform="translate(2.95 2.55)">
+                                    <path id="Stroke_1" data-name="Stroke 1" d="M8.659,4.32A4.33,4.33,0,0,0,0,4.3V4.32"
+                                        transform="translate(4.755 0)" fill="none" stroke="#9498ac"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                    <path id="Stroke_3" data-name="Stroke 3" d="M.523.5H.477"
+                                        transform="translate(11.5 8.324)" fill="none" stroke="#9498ac"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                    <path id="Stroke_5" data-name="Stroke 5" d="M.523.5H.477"
+                                        transform="translate(5.669 8.324)" fill="none" stroke="#9498ac"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                    <path id="Stroke_7" data-name="Stroke 7"
+                                        d="M9.084,14.934c-6.508,0-7.257-2.05-8.718-7.467C-1.1,2.033,1.841,0,9.084,0S19.268,2.033,17.8,7.467C16.341,12.884,15.592,14.934,9.084,14.934Z"
+                                        transform="translate(0 4.006)" fill="none" stroke="#9498ac"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="icon_active">
+                            <svg id="Iconly_Curved_Bag" data-name="Iconly/Curved/Bag" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Bag" transform="translate(2.95 2.55)">
+                                    <path id="Stroke_1" data-name="Stroke 1" d="M8.659,4.32A4.33,4.33,0,0,0,0,4.3V4.32"
+                                        transform="translate(4.755 0)" fill="none" stroke="#9498ac"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                    <path id="Stroke_3" data-name="Stroke 3" d="M.523.5H.477"
+                                        transform="translate(11.5 8.324)" fill="none" stroke="#9498ac"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                    <path id="Stroke_5" data-name="Stroke 5" d="M.523.5H.477"
+                                        transform="translate(5.669 8.324)" fill="none" stroke="#9498ac"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                    <path id="Stroke_7" data-name="Stroke 7"
+                                        d="M9.084,14.934c-6.508,0-7.257-2.05-8.718-7.467C-1.1,2.033,1.841,0,9.084,0S19.268,2.033,17.8,7.467C16.341,12.884,15.592,14.934,9.084,14.934Z"
+                                        transform="translate(0 4.006)" fill="none" stroke="#9498ac"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                </g>
+                            </svg>
+
+                        </div>
+                        <div class="txt__tile">Comprar</div>
+                    </a>
+                </div>
+                <div class="item_link">
+                    <a href="ofertas.html" class="btn btn_navLink">
+                        <button type="button" class="btn btnCircle_default _lg">
+                            <div class="icon_current">
+                                <svg id="Iconly_Two-tone_Bookmark" data-name="Iconly/Two-tone/Bookmark"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="Bookmark" transform="translate(3.5 2)">
+                                        <path id="Path_33968"
+                                            d="M7.368,15.854,1.437,19.1a.989.989,0,0,1-1.318-.394h0A1.043,1.043,0,0,1,0,18.243V3.844C0,1.1,1.876,0,4.577,0H10.92C13.538,0,15.5,1.025,15.5,3.661V18.243a.979.979,0,0,1-.979.979,1.08,1.08,0,0,1-.476-.119L8.073,15.854A.741.741,0,0,0,7.368,15.854Z"
+                                            transform="translate(0.796 0.778)" fill="none" stroke="#200e32"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                            stroke-width="1.5" />
+                                        <path id="Line_209" d="M0,.458H7.3" transform="translate(4.87 6.865)"
+                                            fill="none" stroke="#200e32" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-width="1.5" opacity="0.4" />
+                                    </g>
+                                </svg>
+
+                            </div>
+                            <div class="icon_active">
+                                <svg id="Iconly_Bulk_Bookmark" data-name="Iconly/Bulk/Bookmark"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="Bookmark" transform="translate(4 2)">
+                                        <path id="Bookmark_2" data-name="Bookmark 2"
+                                            d="M7.991,4.913,1.5,8.155a1.019,1.019,0,0,1-1.376-.4A1.09,1.09,0,0,1,0,7.258V0C0,.72.406,1.164,1.473,1.661Z"
+                                            transform="translate(0 11.709)" fill="#200e32" opacity="0.4" />
+                                        <path id="Bookmark-2" data-name="Bookmark"
+                                            d="M14.98,20a1.012,1.012,0,0,1-.506-.136L7.991,16.621,1.473,13.37C.4,12.87,0,12.419,0,11.709V3.793A3.322,3.322,0,0,1,1.435.874,6.145,6.145,0,0,1,4.9,0h6.174A6.188,6.188,0,0,1,14.54.874,3.36,3.36,0,0,1,16,3.793V18.967a1.065,1.065,0,0,1-.123.489,1.023,1.023,0,0,1-.616.5A1.012,1.012,0,0,1,14.98,20ZM4.225,6.041a.791.791,0,0,0,0,1.581h7.524a.791.791,0,0,0,0-1.581Z"
+                                            transform="translate(0)" fill="#200e32" />
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </button>
+                        <div class="txt__tile">Ofertas</div>
+                    </a>
+                </div>
+                <div class="item_link">
+                    <a href="#" class="btn btn_navLink">
+                        <div class="icon_current">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="25" height="25" fill="url(#pattern0_430_440)" />
+                                <defs>
+                                    <pattern id="pattern0_430_440" patternContentUnits="objectBoundingBox" width="1"
+                                        height="1">
+                                        <use xlink:href="#image0_430_440" transform="scale(0.0078125)" />
+                                    </pattern>
+                                    <image id="image0_430_440" width="128" height="128"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="icon_active">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="25" height="25" fill="url(#pattern0_430_441)" />
+                                <defs>
+                                    <pattern id="pattern0_430_441" patternContentUnits="objectBoundingBox" width="1"
+                                        height="1">
+                                        <use xlink:href="#image0_430_441" transform="scale(0.0078125)" />
+                                    </pattern>
+                                    <image id="image0_430_441" width="128" height="128"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="items_basket_circle">2</div>
+                        <div class="txt__tile">Carrinho</div>
+                    </a>
+                </div>
+                <div class="item_link">
+                    <a href="#" class="btn btn_navLink">
+                        <div class="icon_current">
+                            <svg id="Iconly_Two-tone_Setting" data-name="Iconly/Two-tone/Setting"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Setting" transform="translate(2.5 1.5)">
+                                    <path id="Path_33946"
+                                        d="M17.528,5.346l-.622-1.08a1.913,1.913,0,0,0-2.609-.7h0a1.9,1.9,0,0,1-2.609-.677,1.831,1.831,0,0,1-.256-.915h0A1.913,1.913,0,0,0,9.519,0H8.265a1.9,1.9,0,0,0-1.9,1.913h0A1.913,1.913,0,0,1,4.448,3.8a1.831,1.831,0,0,1-.915-.256h0a1.913,1.913,0,0,0-2.609.7l-.668,1.1a1.913,1.913,0,0,0,.7,2.609h0a1.913,1.913,0,0,1,.957,1.657,1.913,1.913,0,0,1-.957,1.657h0a1.9,1.9,0,0,0-.7,2.6h0l.632,1.089A1.913,1.913,0,0,0,3.5,15.7h0a1.895,1.895,0,0,1,2.6.7,1.831,1.831,0,0,1,.256.915h0a1.913,1.913,0,0,0,1.913,1.913H9.519a1.913,1.913,0,0,0,1.913-1.9h0a1.9,1.9,0,0,1,1.913-1.913,1.95,1.95,0,0,1,.915.256h0a1.913,1.913,0,0,0,2.609-.7h0l.659-1.1a1.9,1.9,0,0,0-.7-2.609h0a1.9,1.9,0,0,1-.7-2.609,1.876,1.876,0,0,1,.7-.7h0a1.913,1.913,0,0,0,.7-2.6h0Z"
+                                        transform="translate(0.779 0.778)" fill="none" stroke="#200e32"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" />
+                                    <circle id="Ellipse_737" cx="2.636" cy="2.636" r="2.636"
+                                        transform="translate(7.039 7.753)" fill="none" stroke="#200e32"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" opacity="0.4" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="icon_active">
+                            <svg id="Iconly_Bulk_Setting" data-name="Iconly/Bulk/Setting"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="Setting" transform="translate(2.5 2)">
+                                    <path id="Path"
+                                        d="M2.9,5.65A2.853,2.853,0,0,1,0,2.83,2.861,2.861,0,0,1,2.9,0a2.825,2.825,0,1,1,0,5.65"
+                                        transform="translate(6.61 7.18)" fill="#200e32" />
+                                    <path id="Path-2" data-name="Path"
+                                        d="M18.73,12.37a2.3,2.3,0,0,0-.828-.79,1.547,1.547,0,0,1-.634-.64,1.822,1.822,0,0,1,.654-2.5,2.027,2.027,0,0,0,.756-2.83l-.685-1.18a2.112,2.112,0,0,0-2.872-.76,1.973,1.973,0,0,1-2.575-.69,1.546,1.546,0,0,1-.235-.88,1.778,1.778,0,0,0-.276-1.06A2.152,2.152,0,0,0,10.217,0H8.776A2.195,2.195,0,0,0,6.967,1.04,1.785,1.785,0,0,0,6.681,2.1a1.546,1.546,0,0,1-.235.88,1.963,1.963,0,0,1-2.565.69A2.124,2.124,0,0,0,1,4.43L.314,5.61a2.044,2.044,0,0,0,.756,2.83,1.834,1.834,0,0,1,.664,2.5,1.634,1.634,0,0,1-.644.64,2.118,2.118,0,0,0-.818.79,2,2,0,0,0,.02,2.05L1,15.62a2.134,2.134,0,0,0,1.819,1.04,2.161,2.161,0,0,0,1.083-.3,1.586,1.586,0,0,1,.9-.23,1.892,1.892,0,0,1,1.88,1.82A2.07,2.07,0,0,0,8.807,20H10.2a2.068,2.068,0,0,0,2.115-2.05A1.908,1.908,0,0,1,14.2,16.13a1.63,1.63,0,0,1,.9.23,2.1,2.1,0,0,0,2.892-.74l.715-1.2a2.018,2.018,0,0,0,.02-2.05"
+                                        fill="#200e32" opacity="0.4" />
+                                </g>
+                            </svg>
+
+                        </div>
+                        <div class="txt__tile">Settings</div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- End. em_main_footer -->
+
+        <!-- Start searchMenu__hdr -->
+        <section class="searchMenu__hdr">
+            <form>
+                <div class="form-group">
+                    <div class="input_group">
+                        <input type="search" class="form-control" placeholder="Qual bebida você procura?">
+                        <i class="ri-search-2-line icon_serach"></i>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn_meunSearch -close __removeMenu">
+                <i class="tio-clear"></i>
+            </button>
+        </section>
+        <!-- End. searchMenu__hdr -->
+
+    </div>
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.0.js"></script>
+    <!-- popper.min.js 1.16.1 -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- bootstrap.js v4.6.0 -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel v2.3.4 -->
+    <script src="assets/js/vendor/owl.carousel.min.js"></script>
+    <!-- Swiper 6.4.11 -->
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <!-- sharer 0.4.0 -->
+    <script src="assets/js/vendor/sharer.js"></script>
+    <!-- short-and-sweet v1.0.2 - Accessible character counter for input elements -->
+    <script src="assets/js/vendor/short-and-sweet.min.js"></script>
+    <!-- jquery knob -->
+    <script src="assets/js/vendor/jquery.knob.min.js"></script>
+    <!-- ion.rangeSlider -->
+    <script src="assets/js/vendor/ion.rangeSlider.min.js"></script>
+    <!-- range-slider Custom -->
+    <script src="assets/js/range-slider.js"></script>
+    <!-- main.js -->
+    <script src="assets/js/main.js" defer></script>
+    <!-- PWA app service registration and works js -->
+    <script src="assets/js/pwa-services.js"></script>
+</body>
+
+</html>
